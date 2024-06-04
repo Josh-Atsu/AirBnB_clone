@@ -131,36 +131,42 @@
     color: #484848;
     margin-top: -5px;
 }
-article .amenities {
+article .amenities,
+article .reviews {
     margin-top: 40px;
+    width: 100%;
+    height: inherit;
 }
-.amenities_name_1 {
-    border-bottom: 1px solid #DDDDDD;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.amenities_name_1 h2 {
-    font-size: 16px;
-    margin-right: auto;
-}
-article .amenities .amenities_list_1 ul {
-    list-style: none;
-}
-article .amenities .amenities_list_1 ul li {
+article .amenities ul,
+article .reviews ul {
     list-style-type: none;
+}
+article .amenities h2,
+article .reviews h2 {
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+}
+article .amenities ul li,
+article .reviews ul li {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: end;
+    margin-bottom: 10px;    
 }
 .wifi_icon, .tv_icon, .pet_icon {
+    width: 20px;
+    height: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
-.wifi_icon img, .tv_icon img, .pet_icon img {
-    margin-right: auto;
+.reviews h3 {
+    font-size: 14px;
+    text-align: left;
 }
-.wifi_icon h3, .tv_icon h3, .pet_icon h3{
-    font-size: 15px;
-    left: 5px;
+.reviews p {
+    font-size: 12px;
+    text-align: left;
 }
